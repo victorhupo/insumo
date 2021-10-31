@@ -11,7 +11,7 @@
             }).done(successFunction);
             function successFunction(data){
                 dataa = data.split(",");
-                document.write(dataa);
+                document.write(dataa[0]);
                 
                 var zpl = "^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR6,6~SD15^JUS^LRN^CI0^XZ^XA^PW831^LL1244^LS0^FO146,134^GB0,1080,8^FS^FO145,26^GB549,117,117^FS^FT145,119^A0N,92,98^FR^FH\^FDINSUMO PTW^FS^FO30,43,0^A0N,30,34^FB500,205,1,L^FD"+ total +"^FS^FO200,170,0^A0N,30,34^FB500,205,1,L^FD"+ detalhado +"^FS^PQ1,0,1,Y^XZ"; 
                 var url = "http://"+ ip +":"+ porta +"/pstprnt";
