@@ -8,7 +8,8 @@
             });
             $.ajax("https://docs.google.com/spreadsheet/pub?key=1irYDEQPXZek5iYmxJPeandlxmFxGgJr0i18fZaipa1M&single=true&gid=102054395&range=B2&output=csv").done(function(porta){;
             });
-            $.ajax("https://docs.google.com/spreadsheet/pub?key=1irYDEQPXZek5iYmxJPeandlxmFxGgJr0i18fZaipa1M&single=true&gid=1252808060&range=H10&output=csv").done(function(total){;
+            $.ajax("https://docs.google.com/spreadsheet/pub?key=1irYDEQPXZek5iYmxJPeandlxmFxGgJr0i18fZaipa1M&single=true&gid=1252808060&range=H10&output=csv").done(function(total){
+                return total;
             });
             $.ajax("https://docs.google.com/spreadsheet/pub?key=1irYDEQPXZek5iYmxJPeandlxmFxGgJr0i18fZaipa1M&single=true&gid=1252808060&range=H12&output=csv").done(function(detalhado){;
             });
