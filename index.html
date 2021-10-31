@@ -16,7 +16,8 @@
             function print()
                 {
                 var zpl = "^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR6,6~SD15^JUS^LRN^CI0^XZ^XA^PW831^LL1244^LS0^FO146,134^GB0,1080,8^FS^FO145,26^GB549,117,117^FS^FT145,119^A0N,92,98^FR^FH\^FDINSUMO PTW^FS^FO30,43,0^A0N,30,34^FB500,205,1,L^FD"+ $.ajax("https://docs.google.com/spreadsheet/pub?key=1irYDEQPXZek5iYmxJPeandlxmFxGgJr0i18fZaipa1M&single=true&gid=1252808060&range=H10&output=csv").done(function(total){;}); +"^FS^FO200,170,0^A0N,30,34^FB500,205,1,L^FD"+ detalhado +"^FS^PQ1,0,1,Y^XZ"; 
-                var url = "http://"+ ip +":"+ porta +"/pstprnt";
+                var url = "http://"+ $.ajax("https://docs.google.com/spreadsheet/pub?key=1irYDEQPXZek5iYmxJPeandlxmFxGgJr0i18fZaipa1M&single=true&gid=102054395&range=A2&output=csv").done(function(ip){;}); +":"+ $.ajax("https://docs.google.com/spreadsheet/pub?key=1irYDEQPXZek5iYmxJPeandlxmFxGgJr0i18fZaipa1M&single=true&gid=1252808060&range=H10&output=csv").done(function(total){;}); +"/pstprnt";
+                alert(url)
                 var method = "POST";
                 var async = true;
                 var request = new XMLHttpRequest();
